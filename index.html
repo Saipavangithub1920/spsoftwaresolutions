@@ -56,11 +56,11 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
         (function(){
-            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+            emailjs.init("lwkBTcQfcariaKJBU"); // Replace with your EmailJS Public Key
         })();
         function sendEmail(e){
             e.preventDefault();
-            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target) // Replace Service ID & Template ID
+            emailjs.sendForm('service_afy5w3p', 'template_0ndfwuo', e.target) // Replace Service ID & Template ID
                 .then(() => { 
                     document.getElementById('msg').innerText="Message sent successfully!"; 
                     e.target.reset(); 
